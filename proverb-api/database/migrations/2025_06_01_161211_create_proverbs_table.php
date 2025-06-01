@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('proverbs', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->string('content');
-            $table->string('origin')->nullable();
             $table->timestamps();
         });
     }
